@@ -1,6 +1,3 @@
-// import imagesTpl from '../tamplates/image.hbs';
-// import refs from '../js/refs';
-
 const key = '20154627-553297d4fa4e2a9272bf54c5b';
 
 export default {
@@ -14,5 +11,11 @@ export default {
             return hits;
         })
         .catch(error => console.log(error))
+    },
+    resetPage() {
+        this.page = 1;
+    },
+    incrementPage() {
+        this.page +=1;
     }
 }
